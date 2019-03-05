@@ -1,1 +1,1 @@
-"use strict";
+"use strict";var initSmoothScrolling=function(){$("a[href*=\"#\"]").not("[href=\"#\"]").not("[href=\"#0\"]").click(function(a){if(location.pathname.replace(/^\//,"")==this.pathname.replace(/^\//,"")&&location.hostname==this.hostname){var b=$(this.hash);b=b.length?b:$("[name="+this.hash.slice(1)+"]"),b.length&&(a.preventDefault(),$("html, body").animate({scrollTop:b.offset().top},1e3,function(){var a=$(b);return(a.focus(),!a.is(":focus"))&&void(a.attr("tabindex","-1"),a.focus())}))}})};$(document).ready(function(){initSmoothScrolling()});
