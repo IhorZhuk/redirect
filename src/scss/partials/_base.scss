@@ -3,8 +3,9 @@
 body {
   position: relative;
   font-family: 'Montserrat', sans-serif;
-  font-size: 18px;
+  font-size: 15px;
   color: $color-black;
+  // background: $color-body-bg;
 
   @media (max-width: $md) {
     font-size: 16px;
@@ -18,10 +19,12 @@ a {
   }
 }
 
-h1 {
-  font-size: 45px;
+h2 {
+  font-size: 34px;
+  font-weight: 400;
+  line-height: 1.2;
   @media (max-width: $md) {
-    font-size: 28px;
+    font-size: 24px;
   }
 }
 

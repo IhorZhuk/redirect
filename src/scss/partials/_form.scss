@@ -1,22 +1,13 @@
 .form-control {
   @extend %input-base;
-  height: 62px;
-  padding-left: 15px;
-  padding-right: 15px;
+  @include placeholder($color-border);
+  color: $color-black;
+  border: 1px solid $color-border;
+
+  height: 45px;
+  padding-left: 10px;
+  padding-right: 10px;
   border-radius: 5px;
-  background: transparent;
-
-  &.is-white {
-    @include placeholder(#fff);
-    color: #fff;
-    border: 2px solid #fff;
-  }
-
-  &.is-dark {
-    @include placeholder($color-border);
-    color: $color-black;
-    border: 2px solid $color-border;
-  }
 
   &.has-error {
     border-color: $color-error;

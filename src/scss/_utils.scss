@@ -1,9 +1,9 @@
 $color-black: #242423;
-$color-accent: #FF5964;
-$color-body-bg: #FCFCFC;
-$color-border: #c7c7c7;
-$color-error: #E3170A;
-$color-success: #0EAD69;
+$color-accent: #00aeef;
+$color-body-bg: #f5f5f3;
+$color-border: lighten(#242423, 70%);
+$color-error: #FF5964;
+$color-success: #40bc71;
 
 // breakpoints
 $sm: 576px;
