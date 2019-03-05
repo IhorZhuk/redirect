@@ -1,0 +1,48 @@
+.form-control {
+  @extend %input-base;
+  height: 62px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 5px;
+  background: transparent;
+
+  &.is-white {
+    @include placeholder(#fff);
+    color: #fff;
+    border: 2px solid #fff;
+  }
+
+  &.is-dark {
+    @include placeholder($color-border);
+    color: $color-black;
+    border: 2px solid $color-border;
+  }
+
+  &.has-error {
+    border-color: $color-error;
+  }
+}
+
+.form-row.row {
+  margin-left: -6px;
+  margin-right: -6px;
+
+  > div {
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+}
+
+.form-error {
+  margin-top: -15px;
+  margin-bottom: 20px;
+  color: $color-error;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+textarea.form-control {
+  height: 150px;
+  padding-top: 15px;
+  resize: none;
+}

@@ -1,0 +1,51 @@
+.btn-main {
+  @extend %btn-base;
+  position: relative;
+  color: $color-accent;
+  border: 2px solid $color-accent;
+  font-weight: bold;
+  padding: 20px 30px;
+  border-radius: 5px;
+  background: #fff;
+  min-width: 240px;
+  max-width: 100%;
+
+  &:hover {
+    color: $color-accent;
+    &:after {
+      width: 100%;
+    }
+  }
+
+  &:after {
+    @extend %pseudo;
+    transition: .2s all;
+    position: absolute;
+    left: 0;
+    width: 0;
+    bottom: 0px;
+    height: 4px;
+    background: $color-accent;
+  }
+}
+
+.btn-main.is-white {
+  border-color: #fff;
+
+  &:after {
+    display: none;
+  }
+
+  &:hover {
+    color: #fff;
+    background: rgba(#ffff, .3);
+    &:after {
+      display: none;
+    }
+  }
+}
+
+.btn-main.is-block {
+  display: block;
+  width: 100%;
+}
