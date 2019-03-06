@@ -17,3 +17,8 @@
   display: block;
   width: 100%;
 }
+
+.btn-disabled {
+  opacity: .5;
+  cursor: not-allowed;
+}
