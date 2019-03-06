@@ -29,6 +29,31 @@ const initSmoothScrolling = () => {
   });
 }
 
+
+const initSubForm = () => {
+  $('.js-subform').submit((e) => {
+    e.preventDefault();
+
+    let url = "https://online.us20.list-manage.com/subscribe/post-json?u=175b164b9365ec49bafe78ac5&amp;id=ff08a38ed9&EMAIL=";
+    url = url + encodeURIComponent($('.js-subrom-email').val());
+
+    $.ajax({
+      url: url,
+      jsonp: 'callback',
+      dataType: 'jsonp',
+      success(res) {}
+    });
+
+    $('.js-subrom-email').val('');
+    $('<div class="subsribe-notify">Thank you for subsribing!</div>').appendTo('body').hide().fadeIn();
+    setTimeout(() => {
+      $('.subsribe-notify').fadeOut().remove();
+    }, 4000)
+
+  })
+}
+
 $(document).ready(() => {
   initSmoothScrolling();
+  initSubForm();
 })
