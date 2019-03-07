@@ -1,0 +1,68 @@
+.header-main {
+  width: 100%;
+  background: #fff;
+  border-bottom: 1px solid $color-border;
+  margin-bottom: 100px;
+}
+
+.header-logo {
+  font-size: 25px;
+  color: $color-black;
+
+  &:hover {
+    color: $color-black;
+  }
+
+  img {
+    width: 17px;
+    height: auto;
+    margin-right: 10px;
+  }
+
+  span:first-child {
+    font-weight: lighter;
+  }
+
+  span:last-child {
+    font-weight: bolder;
+  }
+}
+
+.header-nav {
+  font-size: 14px;
+
+  a {
+    position: relative;
+    color: $color-black;
+    display: inline-block;
+
+    &:not(:last-child) {
+      margin-right: 35px;
+
+      @media(max-width: $sm) {
+        margin-right: 15px;
+      }
+    }
+
+    &:after {
+      @extend %pseudo;
+      transition: .2s all;
+      bottom: 0;
+      left: 0;
+      width: 0%;
+      height: 1px;
+      background: $color-accent;
+    }
+
+    &:hover {
+      color: $color-black;
+    }
+
+    &:hover:after,
+    &.is-active:after {
+      width: 100%;
+    }
+
+  }
+
+}

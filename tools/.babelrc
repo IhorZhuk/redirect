@@ -1,0 +1,14 @@
+{
+  "presets": ["@babel/preset-env", "@babel/preset-react"],
+  "plugins": [
+    ["module-resolver", {
+      "root": ["./src"],
+      "alias": {
+        "Controllers": "./src/app/controllers",
+        "Components": "./src/app/components",
+        "Reducers": "./src/app/reducers",
+        "Pages": "./src/app/components/pages"
+      }
+    }]
+  ]
+}

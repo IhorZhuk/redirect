@@ -1,0 +1,19 @@
+.btn-main {
+  @extend %btn-base;
+  position: relative;
+  color: #fff;
+  padding: 15px 20px;
+  border-radius: 12px;
+  background: $color-accent;
+  max-width: 100%;
+
+  &:hover {
+    color: #fff;
+  }
+}
+
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
