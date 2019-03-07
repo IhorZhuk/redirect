@@ -2961,6 +2961,10 @@ img {
   display: block;
   width: 100%; }
 
+.btn-disabled {
+  opacity: .5;
+  cursor: not-allowed; }
+
 .form-control {
   color: #242423;
   border: 1px solid #d7d7d5;
@@ -3001,42 +3005,6 @@ textarea.form-control {
   height: 150px;
   padding-top: 15px;
   resize: none; }
-
-.form-toggle {
-  transition: all .2s;
-  position: relative;
-  display: inline-block;
-  background: #e6e6e6;
-  height: 24px;
-  border-radius: 10px;
-  width: 54px;
-  vertical-align: middle;
-  cursor: pointer; }
-  .form-toggle.is-active {
-    background: #00aeef; }
-    .form-toggle.is-active span {
-      left: 54px; }
-    .form-toggle.is-active label {
-      left: 5px;
-      color: #fff; }
-  .form-toggle label {
-    position: absolute;
-    font-size: 10px;
-    left: 27px;
-    top: 50%;
-    transform: translateY(-50%); }
-  .form-toggle span {
-    transition: all .2s;
-    display: block;
-    width: 24px;
-    height: 24px;
-    background: #fff;
-    position: absolute;
-    border-radius: 50%;
-    left: 24px;
-    margin-left: -24px;
-    top: 0;
-    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.5); }
 
 /**
 * Rangeslider

@@ -1,4 +1,4 @@
-@import "utils";
+@import "./../../../scss/utils";
 
 // Bootstrap
 @import "node_modules/bootstrap/scss/functions";
@@ -14,14 +14,14 @@
 @import "node_modules/bootstrap/scss/utilities/spacing";
 @import "node_modules/bootstrap/scss/transitions";
 
-@import "partials/base";
-@import "partials/text";
-@import "partials/header";
-@import "partials/banner";
-@import "partials/button";
-@import "partials/subsribe";
-@import "partials/form";
-@import "partials/alert";
+@import "./../../../scss/partials/base";
+@import "./../../../scss/partials/text";
+@import "./../../../scss/partials/header";
+@import "./../../../scss/partials/banner";
+@import "./../../../scss/partials/button";
+@import "./../../../scss/partials/subsribe";
+@import "./../../../scss/partials/form";
+@import "./../../../scss/partials/alert";
 
 .not-found-page {
   min-height: 100vh;
