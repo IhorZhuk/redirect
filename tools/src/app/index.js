@@ -12,12 +12,14 @@ import { ConnectedRouter, routerReducer, routerMiddleware} from 'react-router-re
 import App from 'Components/app';
 
 import BoxShadowReducer from 'Reducers/box-shadow';
+import BoxRadiusReducer from 'Reducers/box-radius';
 
 const history = createHistory();
 const middleware = routerMiddleware(history);
 
 const reducer = combineReducers({
   boxShadow: BoxShadowReducer,
+  boxRadius: BoxRadiusReducer,
   router: routerReducer
 });
 

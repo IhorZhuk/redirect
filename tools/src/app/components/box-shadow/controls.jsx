@@ -10,7 +10,7 @@ const Controls = (props) => {
   return (
     <div>
       <ControlGroup 
-        label="Horizontal Length"
+        label="Horizontal length"
         value={props.h_length}
         onChange={(v) => BoxShadowController.update('h_length', v)}
         min={-200}
@@ -23,7 +23,7 @@ const Controls = (props) => {
       />
 
       <ControlGroup 
-        label="Vertical Length"
+        label="Vertical length"
         value={props.v_length}
         onChange={(v) => BoxShadowController.update('v_length', v)}
         min={-200}

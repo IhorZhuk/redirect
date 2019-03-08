@@ -7,8 +7,8 @@ const Header = (props) => {
       <NavLink  exact to="/">
         Box-shadow
       </NavLink>
-      <NavLink to="/box-radius">
-        Box-radius
+      <NavLink to="/border-radius">
+        Border-radius
       </NavLink>
     </nav>
   )
