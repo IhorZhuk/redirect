@@ -37,3 +37,49 @@ textarea.form-control {
   padding-top: 15px;
   resize: none;
 }
+
+.form-toggle {
+  transition: .2s all;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  height: 25px;
+  width: 55px;
+  border-radius: 25px;
+  background: $color-border;
+
+  &.is-active {
+    background: $color-accent;
+
+    label {
+      left: 8px;
+    }
+
+    span {
+      left: 30px;
+    }
+  }
+
+  label {
+    transition: .2s all;
+    position: absolute;
+    color: #fff;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 26px;
+    font-size: 10px;
+  }
+
+  span {
+    transition: .2s all;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 25px;
+    height: 25px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.5);
+  }
+}

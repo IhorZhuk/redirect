@@ -1,8 +1,9 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import BoxShadowController from 'Controllers/box-shadow';
-import ControlGroup from 'Components/box-shadow/control-group';
+import ControlGroup from 'Components/form/control-group';
 import Toggle from 'Components/form/toggle';
+import ColorPicker from 'Components/form/color-picker';
 
 const Controls = (props) => {
 
@@ -47,17 +48,22 @@ const Controls = (props) => {
       />
 
       <ControlGroup 
-        label="Opacity"
-        value={props.opacity}
-        onChange={(v) => BoxShadowController.update('opacity', v)}
-        min={0}
-        max={1}
-        units=''
-        step={0.01}
+        label="Spread"
+        value={props.spread}
+        onChange={(v) => BoxShadowController.update('spread', v)}
+        min={-100}
+        max={100}
         labels={{
-          '0': '0',
-          '1': '1'
+          '-100': '-100px',
+          '0': '0px',
+          '100': '100px'
         }}
+      />
+
+      <ColorPicker
+        label="Shadow color"
+        color={props.color}
+        onChange={(c) => BoxShadowController.update('color', c)}
       />
 
       <Toggle

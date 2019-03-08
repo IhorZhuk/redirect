@@ -1,11 +1,11 @@
 const initState = {
-  h_length: 0,
-  v_length: 0,
-  blur: 0,
+  h_length: 10,
+  v_length: 10,
+  blur: 20,
   spread: 0,
   bg_color: 0,
   box_color: 0,
-  opacity: 0.5,
+  color: 'rgba(0,0,0,0.3)',
   inset: false
 }
 

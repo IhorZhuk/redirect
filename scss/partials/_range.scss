@@ -4,7 +4,7 @@
 .rangeslider {
   margin: 10px 0;
   position: relative;
-  background: #e6e6e6;
+  background: $color-border;
   -ms-touch-action: none;
   touch-action: none;
 }
@@ -139,6 +139,8 @@
 }
 
 .range-input-block {
+
+  font-size: 13px;
 
   input {
     @extend %input-base;

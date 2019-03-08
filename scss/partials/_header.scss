@@ -5,9 +5,18 @@
   margin-bottom: 100px;
 }
 
+.header-absolute {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+
 .header-logo {
   font-size: 25px;
   color: $color-black;
+  white-space: nowrap;
 
   &:hover {
     color: $color-black;

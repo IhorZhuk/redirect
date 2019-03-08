@@ -8,7 +8,7 @@ const Toggle = (props) => {
 
   return (
     <div>
-      {props.label}
+      <span style={{fontSize:13}}>{props.label}</span>
       <div className={`form-toggle ml-1 ${active}`} onClick={props.onChange}>
         <span></span>
         <label>{label}</label>

@@ -12,6 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "@babel/core": "^7.3.3",
+    "@babel/plugin-proposal-class-properties": "^7.3.4",
     "@babel/preset-env": "^7.3.1",
     "@babel/preset-react": "^7.0.0",
     "axios": "^0.17.1",
@@ -24,6 +25,7 @@
     "node-sass": "^4.11.0",
     "prop-types": "^15.7.2",
     "react": "^16.8.3",
+    "react-color": "^2.17.0",
     "react-dom": "^16.8.3",
     "react-rangeslider": "^2.2.0",
     "react-redux": "^5.0.6",

@@ -1,7 +1,7 @@
 import React from 'react';
 import Slider from 'react-rangeslider';
 import PropTypes from 'prop-types';
-import ControlInput from 'Components/box-shadow/control-input';
+import ControlInput from 'Components/form/control-input';
 
 const ControlsGroup = (props) => {
 
