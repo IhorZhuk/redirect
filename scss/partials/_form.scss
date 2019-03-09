@@ -83,3 +83,69 @@ textarea.form-control {
     box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.5);
   }
 }
+
+.form-direction {
+  margin: 10px 0 20px;
+  div {
+    margin-right: 3px;
+    cursor: pointer;
+    float: left;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    opacity: .3;
+    border: 1px solid $border-color;
+
+    &.is-active {
+      opacity: 1;
+    }
+
+    &:after {
+      @extend %pseudo;
+      left: 0;
+      top: 0;
+      width: 0;
+      height: 0;
+      border-style:solid;
+    }
+  }
+}
+
+.form-direction-top:after {
+  border-width: 0 15px 30px 15px;
+  border-color: transparent transparent $color-accent transparent;
+}
+
+.form-direction-top_right:after {
+  border-width: 0 30px 30px 0;
+  border-color: transparent $color-accent transparent transparent;
+}
+
+.form-direction-right:after {
+  border-width: 15px 0 15px 30px;
+  border-color: transparent transparent transparent $color-accent;
+}
+
+.form-direction-bottom_right:after {
+  border-width: 0 0 30px 30px;
+  border-color: transparent transparent $color-accent transparent;
+}
+
+.form-direction-bottom:after {
+  border-width: 30px 15px 0 15px;
+  border-color: $color-accent transparent transparent transparent;
+}
+
+.form-direction-bottom_left:after {
+  border-width: 30px 0 0 30px;
+  border-color: transparent transparent transparent $color-accent;
+}
+
+.form-direction-left:after {
+  border-width: 15px 30px 15px 0;
+  border-color: transparent $color-accent transparent transparent;
+}
+.form-direction-top_left:after {
+  border-width: 30px 30px 0 0;
+  border-color: $color-accent  transparent transparent transparent;
+}

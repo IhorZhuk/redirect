@@ -13,6 +13,7 @@ import App from 'Components/app';
 
 import BoxShadowReducer from 'Reducers/box-shadow';
 import BoxRadiusReducer from 'Reducers/box-radius';
+import TriangleReducer from 'Reducers/triangle';
 
 const history = createHistory();
 const middleware = routerMiddleware(history);
@@ -20,6 +21,7 @@ const middleware = routerMiddleware(history);
 const reducer = combineReducers({
   boxShadow: BoxShadowReducer,
   boxRadius: BoxRadiusReducer,
+  triangle: TriangleReducer,
   router: routerReducer
 });
 

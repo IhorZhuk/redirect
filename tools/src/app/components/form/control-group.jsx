@@ -9,14 +9,14 @@ const ControlsGroup = (props) => {
     <div className="mb-4">
       <ControlInput
         label={props.label}
-        value={props.value}
+        value={Number(props.value)}
         onChange={props.onChange}
         units={props.units}
       />
       <Slider
         min={props.min}
         max={props.max}
-        value={props.value}
+        value={Number(props.value)}
         onChange={(v) => props.onChange(v)}
         labels={props.labels}
         step={props.step}
@@ -32,7 +32,7 @@ ControlsGroup.defaultProps = {
 ControlsGroup.propTypes = {
   label: PropTypes.string,
   units: PropTypes.string,
-  value: PropTypes.number,
+  value: PropTypes.any,
   onChange: PropTypes.func,
   min: PropTypes.number,
   max: PropTypes.number,
