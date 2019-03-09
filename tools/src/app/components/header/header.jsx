@@ -6,7 +6,7 @@ const Header = (props) => {
     <nav className="tools-nav">
       <NavLink  exact to="/">Box-shadow</NavLink>
       <NavLink to="/border-radius">Border-radius</NavLink>
-      <NavLink to="triangle-generator">Triangle generator</NavLink>
+      <NavLink to="/triangle-generator">Triangle generator</NavLink>
     </nav>
   )
 }
