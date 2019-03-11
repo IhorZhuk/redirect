@@ -1,21 +1,21 @@
-.banner-img-wrapper {
-  @media (max-width: $lg) {
-    margin-top: 20px;
-  }
-  img {
-    max-width: 400px;
-    width: 100%;
-    height: auto;
+.banner-hero {
+  padding: 110px 0 130px;
+  background: #CAC531;
+  background: -webkit-linear-gradient(to right, #F3F9A7, #B2E54E); 
+  background: linear-gradient(to right, #F3F9A7, #B2E54E);
+
+  p {
+    font-size: 19px;
+    max-width: 520px;
+    margin: 0 auto;
   }
 }
 
-.banner-block {
-  p {
-    max-width: 400px;
-
-    @media (max-width: $lg) {
-      margin-left: auto;
-      margin-right: auto;
-    }
-  }
+.banner-article {
+  position: relative;
+  min-height: 245px;
+  padding: 30px 25px 15px;
+  box-shadow: 0 3px 10px 0 rgba(0,0,0,0.1);
+  transform: translateY(-50px);
+  background: #fff;
 }

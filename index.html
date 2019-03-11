@@ -19,6 +19,8 @@
   <meta name="msapplication-config" content="favicon/browserconfig.xml" />
   <meta name="theme-color" content="#ffffff" />
 
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/brands.css" integrity="sha384-BKw0P+CQz9xmby+uplDwp82Py8x1xtYPK3ORn/ZSoe6Dk3ETP59WCDnX+fI1XCKK" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/fontawesome.css" integrity="sha384-4aon80D8rXCGx9ayDt85LbyUHeMWd3UiBaWliBlJ53yzm9hqN21A+o1pqoyK04h+" crossorigin="anonymous">
   <link rel="stylesheet" href="landing/dist/css/app.css">
 
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135918106-1"></script>
@@ -32,15 +34,15 @@
 </head>
 <body>
 
-  <header class="header-main pt-1 pb-1">
+  <header class="header-main">
     <div class="container-fluid">
       <div class="row align-items-center">
         <div class="col-md-4 text-md-center mb-2 mb-md-0">
           <a class="header-logo" href="/">
-            <img src="img/logo.svg" alt=""/><span>start</span><span>coding</span>
+            <img src="img/chigabiga.svg" alt=""/>
           </a>
         </div>
-        <div class="col-md-8 text-right text-md-center">
+        <div class="col-md-8 text-right text-md-center mb-2 mb-md-0">
           <nav class="header-nav">
             <a href="/tools.html">CSS tools</a>
             <a href="#subscribe">Subscribe</a>
@@ -51,68 +53,54 @@
     </div>
   </header>
 
-  <section class="container">
-
-    <div class="row">
-      <div class="col-xl-10 offset-xl-1">
-    
-        <div class="row align-items-center text-lg-center pb-5">
-          <article class="col-lg-6 banner-block">
-            <h2>Learn full-stack</h2>
-            <p class="mb-2">
-              Become a full-stack web developer by following our step-by-step tutorials.
-              Browse our free video courses and resources covering modern web technologies such as Node.js and React. 
-            </p>
-            <a class="btn-main" href="https://www.youtube.com/channel/UCq6R-ZK8bRI3jzWLUuw03Uw">Watch tutorials</a>
-          </article>
-          <div class="col-lg-6">
-            <div class="banner-img-wrapper"><img src="img/il-frontend.svg" alt="" /></div>
-          </div>
-        </div>
-
-        <div class="row align-items-center text-lg-center pt-5 pb-5 mb-5">
-          <article class="col-lg-6 order-lg-2 mb-3 mb-lg-0 banner-block">
-            <h2>Code review</h2>
-            <p class="mb-2">
-              Free code review sessions available upon completion of each video course.
-            </p>
-            <a class="btn-main" href="http://channel.startcoding.online">Check availability</a>
-          </article >
-          <div class="col-lg-6 order-lg-1">
-            <div class="banner-img-wrapper"><img src="img/il-git.svg" alt="" /></div>
-          </div>
-        </div>
-
-        <div class="row align-items-center text-lg-center pb-5">
-          <article class="col-lg-6 banner-block">
-            <h2>Front-end tools</h2>
-            <p class="mb-2">Online CSS tools for learning flexbox grids and generating box-shadows, gradients and border radiuses.</p>
-            <a class="btn-main" href="/tools.html">CSS tools</a>
-          </article>
-          <div class="col-lg-6">
-            <div class="banner-img-wrapper"><img src="img/il-tool.svg" alt="" /></div>
-          </div>
-        </div>
-
-        <div class="row align-items-center text-lg-center pt-5 pb-5 mb-5">
-          <article class="col-lg-6 order-lg-2 mb-3 mb-lg-0 banner-block">
-            <h2>Boilerplates</h2>
-            <p class="mb-2">Useful React, Express, Gulp and Sass starter kits. Start building without configuration hustle.</p>
-            <a class="btn-main btn-disabled" href="#!">Coming soon</a>
-          </article>
-          <div class="col-lg-6 order-lg-1">
-            <div class="banner-img-wrapper"><img src="img/il-react.svg" alt="" /></div>
-          </div>
-        </div>
-
-      </div>
-    </div><!-- //row -->
+  <section class="banner-hero">
+    <div class="container text-center">
+      <h1>We share passion for coding</h1>
+      <p class="mb-3">
+        We are professional web developers who love sharing experience and knowledge.
+        Watch weekly tutorials on our youtube channel. 
+      </p>
+      <a class="btn-main has-icon mr-1" href="https://www.youtube.com/channel/UCq6R-ZK8bRI3jzWLUuw03Uw">
+        <i class="fab fa-youtube"></i> Watch tutorials
+      </a>
+    </div>
   </section>
 
-  <div class="subsribe-section" id="subscribe">
+
+
+  <section class="container banner-features" >
+
+    <div class="row text-center">
+      <div class="col-md-4">
+        <article class="mb-3 banner-article">
+          <h2>Code review</h2>
+          <p class="mb-2">
+            Free code review sessions available upon completion of each video course.
+          </p>
+          <a class="btn-link" href="http://channel.startcoding.online">Check availability</a>
+        </article>
+      </div>
+      <div class="col-md-4">
+        <article class="mb-3 banner-article">
+          <h2>Front-end tools</h2>
+          <p class="mb-2">Online CSS tools for learning flexbox grids and generating box-shadows, gradients and border radiuses.</p>
+          <a class="btn-link" href="/tools.html">Show CSS tools</a>
+        </article>
+      </div>
+      <div class="col-md-4">
+        <article class="mb-3 banner-article">
+          <h2>Boilerplates</h2>
+          <p class="mb-2">Useful React, Express, Gulp and Sass starter kits. Start building without configuration hustle.</p>
+          <a class="btn-link btn-disabled" href="#!">Coming soon</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <footer class="subsribe-section pb-2 pb-2" id="subscribe">
     <div class="container">
       <div class="row align-items-center">
-        <div class="col-lg-8 offset-lg-2">
+        <div class="col-md-8 offset-md-2 col-lg-6 offset-lg-3">
           <p class="text-center mb-2">
             Be the first to hear about the latest video releases and site updates.
           </p>
@@ -128,8 +116,8 @@
       </div>
       
     </div>
-    <div class="subscribe-footer text-center">StartCoding &copy; 2019</div>
-  </div>
+    <div class="subscribe-footer text-center mt-3">StartCoding &copy; 2019</div>
+  </footer>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="landing/dist/js/app.js"></script>

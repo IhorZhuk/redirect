@@ -31,6 +31,7 @@ function css() {
 }
 
 function watchTask() {
+  watch(`./../scss/**/*.scss`, css);
   watch(`${ops.srcDir}/scss/**/*.scss`, css);
   watch(`${ops.srcDir}/js/**/*.js`,js);
 }

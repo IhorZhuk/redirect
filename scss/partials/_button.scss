@@ -1,14 +1,44 @@
+@mixin btn {
+  padding: 18px 25px;
+  border-radius: 5px;
+  max-width: 100%;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 800;
+}
+
 .btn-main {
   @extend %btn-base;
-  position: relative;
+  @include btn;
   color: #fff;
-  padding: 15px 20px;
-  border-radius: 12px;
   background: $color-accent;
-  max-width: 100%;
+  box-shadow: 0 3px 6px 0 rgba(0,0,0,0.2);
 
   &:hover {
+    transform: translateY(2px);
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.25);
+    background: $color-accent;
     color: #fff;
+  }
+
+  &.has-icon {
+    i {
+      font-size: 25px;
+      vertical-align: middle;
+      margin-right: 6px;
+    }
+  }
+}
+
+.btn-link {
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 800;
+  color: $color-accent;
+
+  &:hover {
+    color: $color-accent;
+    text-decoration: underline;
   }
 }
 

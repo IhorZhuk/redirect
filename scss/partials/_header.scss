@@ -1,8 +1,8 @@
 .header-main {
+  position: relative;
   width: 100%;
   background: #fff;
-  border-bottom: 1px solid $color-border;
-  margin-bottom: 100px;
+  box-shadow: 0 0 10px 0 rgba(0,0,0,0.15);
 }
 
 .header-absolute {
@@ -14,31 +14,16 @@
 }
 
 .header-logo {
-  font-size: 25px;
-  color: $color-black;
-  white-space: nowrap;
-
-  &:hover {
-    color: $color-black;
-  }
-
+  display: block;
+  padding: 10px 0;
   img {
-    width: 17px;
+    width: 210px;
     height: auto;
-    margin-right: 10px;
-  }
-
-  span:first-child {
-    font-weight: lighter;
-  }
-
-  span:last-child {
-    font-weight: bolder;
   }
 }
 
 .header-nav {
-  font-size: 14px;
+  font-size: 15px;
 
   a {
     position: relative;

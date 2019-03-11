@@ -1,10 +1,10 @@
 .form-control {
   @extend %input-base;
-  @include placeholder($color-border);
+  @include placeholder($color-black);
   color: $color-black;
   border: 1px solid $color-border;
 
-  height: 45px;
+  height: 49px;
   padding-left: 10px;
   padding-right: 10px;
   border-radius: 5px;
